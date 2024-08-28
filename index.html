@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Imeges & Video</title>
+</head>
+<body>
+    <section class="w-full py-[60px] max-w-[800px] mx-auto w-full">
+        <div class="p-[22px] shadow-lg w-full rounded-[30px] cursor-pointer relative">
+            <input type="file" accept="image/*" class="h-full w-full absolute inset-0 opacity-0 cursor-pointer" id="input_file">
+            <div class=" border-dashed border rounded-[30px] border-[#cfdbe7] w-full py-[100px] flex items-center justify-center flex-col">
+                <p class="text-[#0A1C4B] text-[18px]">Drag & drop <span class="font-[600]">“profile image”</span> here</p>
+                <p class="text-[#0A1C4B] text-[18px] mt-[4px]">or <span class="text-[#24D0D0]">Browse File</span></p>
+            </div>
+        </div>  
+        <div class="mt-6 flex gap-2">
+            <div class="rounded-lg shadow-lg relative h-[160px] w-[160px] overflow-hidden relative hidden" id="image_preview">
+                <img src="" class="absolute h-full w-full inset-0 object-cover" id="image" alt="">
+                <svg class="absolute top-[9px] right-[9px] cursor-pointer h-[20px] w-[20px]" id="cancle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+            </div>
+        </div>  
+    </div>
+</section>
+<input type="number" maxlength="3">
+
+    <script src="/app.js"></script>
+</body>
+</html>
